@@ -1,0 +1,113 @@
+/**
+ * domey首页样式
+ */
+html,body{
+	width: 100%;
+	
+}
+.zwl-section{
+	width: 100%;
+}
+.zwl-section .botton-primary{
+	width: 100%;
+	height: 0.75rem;
+	line-height: 0.75rem;
+	font-size: 0.32rem;
+	margin-top: 0.3rem;
+	border: none;
+}
+.Z_Alert{
+	background-color: #fff;
+}
+.Z_toast{
+	background-color: #04BE02;
+	color: #fff;
+}
+/**
+ * 插件的包裹元素
+ */
+#J_plu{
+	background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 1500;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#ZWL_ALERT{
+	width: 80%;
+	background-color: #fff;
+	border-radius: 0.2rem;
+	
+	
+}
+#ZWL_ALERT .ALERT_TITLE{
+	width: 100%;
+	height: 0.75rem;
+	line-height: 0.75rem;
+	text-align: center;
+	background-color: #04BE02;
+	font-size: 0.32rem;
+	border-top-left-radius: 0.2rem;
+	border-top-right-radius: 0.2rem;
+	
+}
+
+#ZWL_ALERT .ALERT_CONTENT{
+	width: 100%;
+	margin: 0.1rem auto;
+	
+}
+#ZWL_ALERT .ALERT_CONTENT img{
+	width: 20%;
+	margin: 0.2rem ;
+	display: inline-block;
+	float: left;
+	vertical-align: middle;
+}
+#ZWL_ALERT .ALERT_CONTENT .ALERT_TEXT{
+	min-width: 40%;
+	max-width: 70%;
+	float: left;
+	font-size: 0.32rem;
+	margin: 0.2rem 0rem;
+	vertical-align: middle;
+}
+#ZWL_ALERT .ALERT_COMFIRM{
+	width: 100%;
+	padding-bottom:0.3rem ;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+}
+#ZWL_ALERT .ALERT_COMFIRM .ALERT_COMFIRM_BUTTON{
+	width: 40%;
+	background-color:#04BE02 ;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.28rem;
+	border-radius: 0.1rem;
+}
+.ALERT_TEXT_JUST01{
+	line-height: 1rem;
+	text-align: center;
+}
+.ALERT_TEXT_JUST02{
+	line-height: 0.5rem;
+	text-align: left;
+}

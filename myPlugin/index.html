@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的第一个插件</title>
+		<link rel="stylesheet" type="text/css" href="css/util.css"/>
+		<link rel="stylesheet" type="text/css" href="css/util.css"/>
+		<script src="js/util.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<section>
+			<div class="zwl-section">
+				<input type="button" class="botton-primary Z_Alert" name="" id="" value="alert弹框" />
+				<input type="button" class="botton-primary Z_toast" name="" id="" value="toast" />
+				<input type="button" class="botton-primary" name="" id="" value="ddd" />
+				<input type="button" class="botton-primary" name="" id="" value="ddd" />
+				<input type="button" class="botton-primary" name="" id="" value="ddd" />
+				<input type="button" class="botton-primary" name="" id="" value="ddd" />
+				<input type="button" class="botton-primary" name="" id="" value="ddd" /><input type="button" class="botton-primary" name="" id="" value="ddd" />
+				<input type="button" class="botton-primary" name="" id="" value="ddd" />
+				<input type="button" class="botton-primary" name="" id="" value="ddd" />
+				<input type="button" class="botton-primary" name="" id="" value="ddd" />
+				<input type="button" class="botton-primary" name="" id="" value="ddd" />
+				<input type="button" class="botton-primary" name="" id="" value="ddd" />
+				<input type="button" class="botton-primary" name="" id="" value="ddd" />
+				<input type="button" class="botton-primary" name="" id="" value="ddd" />
+				<input type="button" class="botton-primary" name="" id="" value="ddd" />
+				<input type="button" class="botton-primary" name="" id="" value="ddd" />
+				
+			</div>
+			
+			
+		</section>
+		
+			
+	</body>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/zwlFirstJquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		!function(win, $){
+			var dialog = win.dialog;
+			console.log(dialog)
+			$(".Z_Alert").on("click",function(){
+				win.dialog.alert("您已支付成功成功成功成功成功成功成功成功成功");
+			});
+		}(window,jQuery);
+	</script>
+</html>
