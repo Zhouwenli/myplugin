@@ -1,4 +1,45 @@
-
+/**
+ * 解决页面滚动的问题
+ */
+!function(window){
+	"use strict";
+	
+	var doc=window.document;
+	var zwlplugin={};
+	/**
+	 * 直接绑定FastClick
+	 */
+	$(window).on('load',function(){
+		typeof FastClick == 'function' && FastClick.attach(doc.body);
+	});
+	
+	var util=window.util={
+		/**
+		 * 页面滚动
+		 */
+		pageScroll:function(e){
+			var fn=function(e){
+				e.preventDefault();
+                e.stopPropagation();
+			};
+			
+			var islock=false;
+			
+			return{
+				lock:function(){
+					if(islock)return;
+					islock=true;
+					doc.addEventListener('touchmove',fn);
+				},
+				unlock:function () {
+                    islock = false;
+                    doc.removeEventListener('touchmove', fn);
+                }
+			};
+		}()
+	}
+	
+}(window);
 
 /**
  * 这是自执行函数
@@ -41,8 +82,10 @@
 				'</div>'+
 			'</div>');
 		$body.append($dom);
+		window.util.pageScroll.lock();
 		$dom.find(".ALERT_COMFIRM_BUTTON").on("click",function(){
 			$dom.remove();
+			window.util.pageScroll.unlock();
 			typeof callback === 'function' && callback();
 		});
 	}
