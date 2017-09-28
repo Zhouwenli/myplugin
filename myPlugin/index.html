@@ -12,21 +12,8 @@
 			<div class="zwl-section">
 				<input type="button" class="botton-primary Z_Alert" name="" id="" value="alert弹框" />
 				<input type="button" class="botton-primary Z_toast" name="" id="" value="toast" />
-				<input type="button" class="botton-primary" name="" id="" value="ddd" />
-				<input type="button" class="botton-primary" name="" id="" value="ddd" />
-				<input type="button" class="botton-primary" name="" id="" value="ddd" />
-				<input type="button" class="botton-primary" name="" id="" value="ddd" />
-				<input type="button" class="botton-primary" name="" id="" value="ddd" />
-				<input type="button" class="botton-primary" name="" id="" value="ddd" />
-				<input type="button" class="botton-primary" name="" id="" value="ddd" />
-				<input type="button" class="botton-primary" name="" id="" value="ddd" />
-				<input type="button" class="botton-primary" name="" id="" value="ddd" />
-				<input type="button" class="botton-primary" name="" id="" value="ddd" />
-				<input type="button" class="botton-primary" name="" id="" value="ddd" />
-				<input type="button" class="botton-primary" name="" id="" value="ddd" />
-				<input type="button" class="botton-primary" name="" id="" value="ddd" />
-				<input type="button" class="botton-primary" name="" id="" value="ddd" />
-				<input type="button" class="botton-primary" name="" id="" value="ddd" />
+				
+				
 				
 			</div>
 			
@@ -43,6 +30,10 @@
 			console.log(dialog)
 			$(".Z_Alert").on("click",function(){
 				win.dialog.alert("成功");
+			});
+			
+			$(".Z_toast").on("click",function(){
+				win.dialog.toast("我是一个toast弹窗");
 			});
 		}(window,jQuery);
 	</script>

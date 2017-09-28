@@ -33,7 +33,7 @@
 				},
 				unlock:function () {
                     islock = false;
-                    doc.removeEventListener('touchmove', fn);
+                    doc.removeEventListener('touchmove',fn);
                 }
 			};
 		}()
@@ -88,7 +88,20 @@
 			window.util.pageScroll.unlock();
 			typeof callback === 'function' && callback();
 		});
-	}
+	};
+	
+	dialog.toast=function(mes){
+		var $dom=$(''+
+			'<div id="J_pluToast">'+
+				'<div id="ZWL_TOAST">'+mes+'</div>'+
+			'</div>');
+		
+		$body.append($dom);
+		
+		setTimeout(function(){
+			$dom.remove();
+		},2000);
+	};
 	
 }(window);
 

@@ -11,3 +11,14 @@
 3.var dialog= window.dialog=window.dialog ||{};
 这样做的目的是为了在调用插件的时候，能在外部可以访问到dialog
 
+4.var fn=function(e){
+		e.preventDefault();
+	    e.stopPropagation();
+	};
+这段代码是防止页面滑动的，当页面点击出现弹框的时候，测试的时候应该在手机上面进行调试，可以使用草料二维码进行在线的模拟。
+
+5.typeof callback === 'function' && callback();
+相当于 
+if(typeof callback==='function'){
+	callback();
+}
