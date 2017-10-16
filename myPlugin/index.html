@@ -12,15 +12,10 @@
 			<div class="zwl-section">
 				<input type="button" class="botton-primary Z_Alert" name="" id="" value="alert弹框" />
 				<input type="button" class="botton-primary Z_toast" name="" id="" value="toast" />
-				
-				
-				
+				<input type="button" class="botton-primary Z_confirm" name="" id="" value="confirm" />
 			</div>
-			
-			
 		</section>
 		
-			
 	</body>
 	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="js/zwlFirstJquery.js" type="text/javascript" charset="utf-8"></script>
@@ -35,6 +30,10 @@
 			$(".Z_toast").on("click",function(){
 				win.dialog.toast("我是一个toast弹窗");
 			});
+			
+			$(".Z_confirm").on("click",function(){
+				win.dialog.confirm("我是一个confirm弹窗,就看看好不好看，随便看看");
+			})
 		}(window,jQuery);
 	</script>
 </html>

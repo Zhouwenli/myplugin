@@ -53,8 +53,6 @@ html,body{
 	border-radius: 0.2rem;
 	-webkit-animation: zoomIn .15s ease forwards;
     animation: zoomIn .15s ease forwards;
-	
-	
 }
 #ZWL_ALERT .ALERT_TITLE{
 	width: 100%;
@@ -65,13 +63,11 @@ html,body{
 	font-size: 0.32rem;
 	border-top-left-radius: 0.2rem;
 	border-top-right-radius: 0.2rem;
-	
 }
 
 #ZWL_ALERT .ALERT_CONTENT{
 	width: 100%;
 	margin: 0.1rem auto;
-	
 }
 #ZWL_ALERT .ALERT_CONTENT img{
 	width: 20%;
@@ -132,8 +128,11 @@ html,body{
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-	
 }
+
+/**
+ * toast弹框
+ */
 #ZWL_TOAST{
 	max-width:80%;
 	background-color: rgba(0, 0, 0, 0.4);
@@ -144,3 +143,67 @@ html,body{
 	color: #fff;
 	border-radius: 0.1rem;
 } 
+
+/**
+ * confirm
+ */
+.Z_confirm {
+    background-color: #13eb73;
+    color: #fff;
+    
+}
+#ZWL_CONFIRM{
+	min-width: 50%;
+	max-width: 80%;
+	background-color: #fff;
+	font-size: 0.32rem;
+	border-radius: 0.1rem;
+	
+   
+	
+}
+#ZWL_CONFIRM .CONFIRM_TEXT{
+	width: 100%;
+	line-height: 0.5rem;
+	text-align: center;
+	padding: 0.3rem;
+}
+#ZWL_CONFIRM .COMFIRM_BOTTON{
+	width: 100%;
+	padding-bottom: 0.35rem;
+	text-align: center;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+	 -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+	
+}
+#ZWL_CONFIRM .COMFIRM_BOTTON #yes{
+	width: 26%;
+	color: #fff;
+	background-color: #04BE02;
+	outline: none;
+	border: none;
+	font-size: 0.3rem;
+	line-height: 0.5rem;
+	
+}
+#ZWL_CONFIRM .COMFIRM_BOTTON #no{
+	width: 26%;
+	color: #fff;
+	margin-right: 20%;
+	background-color: #ec2f4e;
+	outline: none;
+	border: none;
+	font-size: 0.3rem;
+	line-height: 0.5rem;
+}
+

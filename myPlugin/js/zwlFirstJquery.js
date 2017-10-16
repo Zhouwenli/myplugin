@@ -90,6 +90,10 @@
 		});
 	};
 	
+	/**
+	 * toast弹窗
+	 * @param {Object} mes
+	 */
 	dialog.toast=function(mes){
 		var $dom=$(''+
 			'<div id="J_pluToast">'+
@@ -101,6 +105,33 @@
 		setTimeout(function(){
 			$dom.remove();
 		},2000);
+	};
+	
+
+	
+	dialog.confirm=function(mes){
+		var $dom=$(''+
+			'<div id="J_plu">'+
+			'<div id="ZWL_CONFIRM">'+
+				'<div class="CONFIRM_TEXT">'+mes+'</div>'+
+				'<div class="COMFIRM_BOTTON">'+
+					'<input type="button" name="" id="no" value="取消" />'+
+					'<input type="button" name="" id="yes" value="确定" />'+
+				'</div>'+
+			'</div>'+
+		'</div>');
+		$body.append($dom);
+		window.util.pageScroll.lock();
+		$dom.find("#yes").on("click",function(){
+			$dom.remove();
+			window.util.pageScroll.unlock();
+			typeof callback === 'function' && callback();
+		})
+		$dom.find("#no").on("click",function(){
+			$dom.remove();
+			window.util.pageScroll.unlock();
+			
+		})
 	};
 	
 }(window);
